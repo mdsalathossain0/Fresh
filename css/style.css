@@ -43,7 +43,7 @@ li, a{
     font-weight: 600;
     font-family: "Poppins", serif;
 }
-.button a{
+.nav .button a{
     font-size: 24px;
     font-weight: 600;
     color: #000;
@@ -51,44 +51,47 @@ li, a{
     font-family: "Poppins", serif;
     
 }
-.button a:first-child{
+.nav .button a:first-child{
     
     padding: 10px 28px;
     border: 1px solid rgba(0, 0, 0, .25);
     box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
 }
-.button a:nth-child(2){
+.nav .button a:nth-child(2){
     padding: 10px 15px;
     background: #FDBB57;
 }
 
-.section{
+.style-section{
     background: #FAE3B6;
 }
-.section .box{
-    display: flex;
-   
+.style-section .left{
+    width: 50%;
 }
-.find_best{
+.style-section .right{
+    width: 50%;
+}
+
+.style-section .find_best{
     width: 50%;
     padding-bottom: 180px;
     padding-left: 28px;
 }
-.find_best h1{
-    width: 482px;
+.style-section .find_best h1{
+    width: 482px; 
     font-size: 64px;
     font-weight: 600;
     padding-top: 117px;
     font-family: "Poppins", serif;
 }
-.find_best p{
+.style-section .find_best p{
     width: 531px;
     font-size: 22px;
     padding-top: 38px;
     padding-bottom: 75px;
     font-family: "Poppins", serif;
 }
-.find_best a{
+.style-section .find_best a{
     width: 280px;
     background: #000;
     color: white;
@@ -98,7 +101,7 @@ li, a{
     border-radius: 10px;
     font-family: "Poppins", serif;
 }
-.group2{
+.style-section .group2{
     width: 50%;
     padding-top: 123px;
     padding-right: 35px;
@@ -107,12 +110,14 @@ li, a{
 
 /* collection part start */
 .collection{
+    padding-top: 150px;
     padding-bottom: 100px;
 }
 .collection h2{
-    
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Frank Ruhl Libre", serif;  
     text-align: center;
-    padding-top: 200px;
     padding-bottom: 75px;
 }
 .collection .sweater{
@@ -207,6 +212,7 @@ li, a{
     z-index: -1;
     display: flex;
     justify-content: space-evenly;
+   
     
 }
 .fashion .fashion-fact .info h4{
@@ -221,8 +227,99 @@ li, a{
     font-family: "Poppins", serif;
 
 }
-.fashion .just-fun{
+/* .fashion .just-fun{
     padding-top: 190px;
     padding-left: 250px;
-}
+    padding-bottom: -150px;
+} */
 /* Fashion part end */
+
+/* Product part start */
+.product{
+    background: #CFA485;
+    margin-top: 150px;
+    padding-bottom: 190px;
+    padding-top: 40px;
+}
+.product .left{
+    width: 40%;
+    
+}
+.product .right{
+    width: 60%;
+    
+}
+.product .left h2{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Frank Ruhl Libre", serif;
+    color: white;
+}
+.product .left p{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Frank Ruhl Libre", serif;
+    color: white;
+    padding-top: 43px;
+    padding-bottom: 40px;
+}
+.product .left a{
+    width: 280px;
+    background: black;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 15px 38px;
+    border-radius: 10px;
+    font-family: "Poppins", serif;
+}
+.product .right .card {
+    width: 367px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background: white;
+}
+.product .right .card img{
+    width: 100%;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+.product .right .card ul{
+    display: flex;
+    column-gap: 20px;
+    padding-left: 25px;
+    padding-top: 18px;
+    
+}
+.product .right .card ul li{
+    color: #FFAF37;
+}
+.product .right .card p{
+    font-size: 22px;
+    font-family: 600;
+    font-family: "Poppins", serif;
+    padding-top: 12px;
+    padding-left: 25px;
+}
+.product  .right .card .price {
+    display: flex;
+    column-gap: 31px;
+    padding-bottom: 7px;
+}
+.product  .right .card .price h5{
+    font-size: 24px;
+    font-family: "Poppins", serif;
+    color: rgba(0, 0, 0, .25);
+    padding-left: 25px;
+}
+.product  .right .card .price h4{
+    font-size: 24px;
+    font-family: "Poppins", serif;
+    
+}
+.product .right .product1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Product part end */

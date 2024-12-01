@@ -1,3 +1,4 @@
+HTML:
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,23 +41,17 @@
     </div>
     <section class="style-section">
         <div class="container">
-            
-                <div class="box">
-                    <div class="left">
-                        <div class="find_best">
-                            <h1>Find The Best Fashion Style 
-                                For You</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, odio pellentesque mattis pulvinar felis. At arcu ornare rhoncus, elementum non viverra. </p>
-                                <a href="">SHOP NOW</a>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="group2">
-                            <img src="images/group2.png" alt="">
-                        </div>
-                    </div>
+            <div class="box">
+                <div class="find_best">
+                    <h1>Find The Best Fashion Style 
+                        For You</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, odio pellentesque mattis pulvinar felis. At arcu ornare rhoncus, elementum non viverra. </p>
+                        <a href="">SHOP NOW</a>
                 </div>
-            
+                <div class="group2">
+                    <img src="images/group2.png" alt="">
+                </div>
+            </div>
         </div>
     </section>
     <!-- collection part start -->
@@ -188,3 +183,324 @@
     
 </body>
 </html>
+
+CSS:
+*{
+    margin: 0;
+    padding: 0;
+}
+li, a{
+    list-style: none;
+    text-decoration: none;
+}
+.nav{
+    background: #FAE3B6 ;
+    align-items: center;
+    padding: 47px 0;
+}
+.container{
+    width: 1320px;
+    margin: 0 auto;
+}
+.box{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.logo{
+    width: 20%;
+}
+.navber{
+    width: 60%;
+
+}
+.button{
+    width: 20%;
+
+}
+.logo img{
+    font-family: "Poppins", serif;
+}
+
+.nav .navber ul{
+    display: flex;
+    column-gap: 60px;
+}
+.nav .navber ul li{
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Poppins", serif;
+}
+.nav .button a{
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    border-radius: 10px;
+    font-family: "Poppins", serif;
+    
+}
+.nav .button a:first-child{
+    
+    padding: 10px 28px;
+    border: 1px solid rgba(0, 0, 0, .25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+}
+.nav .button a:nth-child(2){
+    padding: 10px 15px;
+    background: #FDBB57;
+}
+
+.style-section{
+    background: #FAE3B6;
+}
+
+.style-section .find_best{
+    width: 50%;
+    padding-bottom: 180px;
+    padding-left: 28px;
+}
+.style-section .find_best h1{
+    width: 482px;
+    font-size: 64px;
+    font-weight: 600;
+    padding-top: 117px;
+    font-family: "Poppins", serif;
+}
+.style-section .find_best p{
+    width: 531px;
+    font-size: 22px;
+    padding-top: 38px;
+    padding-bottom: 75px;
+    font-family: "Poppins", serif;
+}
+.style-section .find_best a{
+    width: 280px;
+    background: #000;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 15px 38px;
+    border-radius: 10px;
+    font-family: "Poppins", serif;
+}
+.style-section .group2{
+    width: 50%;
+    padding-top: 123px;
+    padding-right: 35px;
+
+}
+
+/* collection part start */
+.collection{
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.collection h2{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Frank Ruhl Libre", serif;  
+    text-align: center;
+    padding-bottom: 75px;
+}
+.collection .sweater{
+    width: 352px;
+    height: 405px;
+    position: relative;
+    overflow: hidden;
+}
+.collection .sweater img{
+    width: 100%;
+    height: 100%;
+
+}
+.collection .sweater .overlay{
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    padding-top: 300px;
+    padding-bottom: 44px;
+    padding-left: 21px;
+    box-sizing: border-box;
+    transition: .5s;
+    
+    
+    
+}
+
+.collection .sweater .overlay a{
+    background: white;
+    color: black;
+    font-size: 24px;
+    font-family: "Poppins", serif;
+    padding: 10px 108px;
+    border-radius: 20px;
+     
+}
+.collection .sweater:hover .overlay {
+    top: 0;
+}
+.collection .box{
+    justify-content: space-between;
+}
+
+/* collection part end */
+
+/* Fashion part start */
+.fashion{
+    padding-bottom: 130px;
+}
+.fashion .left{
+    width: 50%;
+   
+}
+.fashion .left img{
+    width: 100%;
+}
+.fashion .right{
+    width: 50%;
+    
+}
+.fashion .right h2{
+    width: 430px;
+    font-size: 64px;
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 700;
+    padding-top: 120px;
+    padding-left: 35px;
+}
+.fashion .right p{
+    width: 440px;
+    font-size: 24px;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    padding-top: 63px;
+    padding-left: 35px;
+}
+.fashion .fashion-fact{
+    position: relative;
+    
+}
+.fashion .fashion-fact .info {
+    width: 793px;
+    padding: 80px 0;
+    background: #FEECC8;
+    position: absolute;
+    bottom: -200px;
+    right: 20px;
+    z-index: -1;
+    display: flex;
+    justify-content: space-evenly;
+   
+    
+}
+.fashion .fashion-fact .info h4{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Podkova", serif;
+
+}
+.fashion .fashion-fact .info p{
+    font-size: 28px;
+    font-weight: 600;
+    font-family: "Poppins", serif;
+
+}
+/* .fashion .just-fun{
+    padding-top: 190px;
+    padding-left: 250px;
+    padding-bottom: -150px;
+} */
+/* Fashion part end */
+
+/* Product part start */
+.product{
+    background: #CFA485;
+    margin-top: 150px;
+    padding-bottom: 190px;
+    padding-top: 40px;
+}
+.product .left{
+    width: 40%;
+    
+}
+.product .right{
+    width: 60%;
+    
+}
+.product .left h2{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: "Frank Ruhl Libre", serif;
+    color: white;
+}
+.product .left p{
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Frank Ruhl Libre", serif;
+    color: white;
+    padding-top: 43px;
+    padding-bottom: 40px;
+}
+.product .left a{
+    width: 280px;
+    background: black;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 15px 38px;
+    border-radius: 10px;
+    font-family: "Poppins", serif;
+}
+.product .right .card {
+    width: 367px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    background: white;
+}
+.product .right .card img{
+    width: 100%;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+.product .right .card ul{
+    display: flex;
+    column-gap: 20px;
+    padding-left: 25px;
+    padding-top: 18px;
+    
+}
+.product .right .card ul li{
+    color: #FFAF37;
+}
+.product .right .card p{
+    font-size: 22px;
+    font-family: 600;
+    font-family: "Poppins", serif;
+    padding-top: 12px;
+    padding-left: 25px;
+}
+.product  .right .card .price {
+    display: flex;
+    column-gap: 31px;
+    padding-bottom: 7px;
+}
+.product  .right .card .price h5{
+    font-size: 24px;
+    font-family: "Poppins", serif;
+    color: rgba(0, 0, 0, .25);
+    padding-left: 25px;
+}
+.product  .right .card .price h4{
+    font-size: 24px;
+    font-family: "Poppins", serif;
+    
+}
+.product .right .product1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Product part end */

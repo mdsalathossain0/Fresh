@@ -1,2 +1,3 @@
   font-family: "Frank Ruhl Libre", serif;
-font-family: "Poppins", serif;
+  font-family: "Poppins", serif;
+  font-family: "Podkova", serif;
